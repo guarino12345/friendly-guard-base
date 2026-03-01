@@ -6,6 +6,7 @@ export default function Layout({ children, currentPageName }) {
   const navItems = [
     { label: "Dashboard", page: "Dashboard" },
     { label: "Alert Log", page: "Alerts" },
+    { label: "Plugin Setup", page: "PluginSetup" },
   ];
 
   return (
