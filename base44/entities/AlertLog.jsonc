@@ -1,0 +1,57 @@
+{
+  "name": "AlertLog",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string",
+      "description": "Reference to Site entity id"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "error_type": {
+      "type": "string"
+    },
+    "check_name": {
+      "type": "string",
+      "enum": [
+        "frontend",
+        "layout",
+        "mobile",
+        "call_button",
+        "gtm_swap",
+        "form",
+        "plugins",
+        "theme",
+        "wp_core",
+        "elementor",
+        "cron",
+        "smtp",
+        "rest_api"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "warning",
+        "critical"
+      ],
+      "default": "warning"
+    },
+    "message": {
+      "type": "string"
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "domain",
+    "error_type",
+    "check_name"
+  ]
+}

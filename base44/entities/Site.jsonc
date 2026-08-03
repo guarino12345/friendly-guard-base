@@ -1,0 +1,161 @@
+{
+  "name": "Site",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "description": "Client name"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Full domain URL"
+    },
+    "api_key": {
+      "type": "string",
+      "description": "Secret key the WP plugin uses to authenticate POSTs"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "healthy",
+        "warning",
+        "critical"
+      ],
+      "default": "healthy"
+    },
+    "last_checked": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "frontend_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "layout_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "mobile_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "call_button_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "gtm_swap_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "form_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "plugins_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "theme_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "wp_core_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "elementor_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "cron_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "smtp_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "rest_api_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail",
+        "unknown"
+      ],
+      "default": "unknown"
+    },
+    "wp_version": {
+      "type": "string"
+    },
+    "elementor_version": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "client_name",
+    "domain"
+  ]
+}
